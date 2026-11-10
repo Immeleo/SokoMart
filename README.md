@@ -58,25 +58,25 @@ To execute select the entire query and click execute.
 ### Question 6 — County leaderboards 
 **Scenario.** Each county manager wants their top 3 customers by lifetime revenue.
 To run select entire query and click execute.
-| Question 6 — Products nobody has ordered | `section_a_ctes_subqueries.sql` | | screenshots/county_leaderboards.png
+| Question 6 — Products nobody has ordered | `section_b_window_functions.sql` | | screenshots/county_leaderboards.png
 
 ### Question 7 — Best sellers per category, 2025 
 **Scenario:** Category buyers are planning 2026 stock and want 2025's top 3 products in each category.
 To run select entire query and click execute.
-| Question 7 — Best sellers per category, 2025 | `section_a_ctes_subqueries.sql` | | screenshots/Best_Sellers_per_Category_in_2025
+| Question 7 — Best sellers per category, 2025 | `section_b_window_functions.sql` | | screenshots/Best_Sellers_per_Category_in_2025
 
 ### Question 8 — Month-over-month growth 
 **Scenario.** The CEO's dashboard shows revenue growth versus the previous month.
 To run select entire query and click execute.
-| Question 8 — Month-over-month growth  | `section_a_ctes_subqueries.sql` | | screenshots/month_over_month_growth.png
+| Question 8 — Month-over-month growth  | `section_b_window_functions.sql` | | screenshots/month_over_month_growth.png
 
 ### Question 9 — Is each order bigger than the last? 
 **Scenario.** Customer success in **Nyeri** wants to see whether customers are spending more or
 less per order through 2026.
 To 1st query select query upto ';' and click execute. To run the second query comment the 1st query, select entire query and then run.
-| Question 9 — Is each order bigger than the last? | `section_a_ctes_subqueries.sql` | | screenshots/is_order_big_than_last.png and screenshots/nyeri_order_size_summary.png
+| Question 9 — Is each order bigger than the last? | `section_b_window_functions.sql` | | screenshots/is_order_big_than_last.png and screenshots/nyeri_order_size_summary.png
 
 ### Question 10 — Year-to-date revenue 
 **Scenario.** Finance reports cumulative revenue that **restarts every January**.
 To run select entire query and click execute.
-| Question 10 — Year-to-date revenue | `section_a_ctes_subqueries.sql` | | screenshots/year_to_date_revenue.png
+| Question 10 — Year-to-date revenue | `section_b_window_functions.sql` | | screenshots/year_to_date_revenue.png
