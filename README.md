@@ -1,7 +1,5 @@
 **Team Member - Leonard Mambo Mwilu, Cohort 9, 11th October 2026**
 
-
-
 **How to Run SQL queries**
 
 Assuming that you have the database ready and loaded with the data files. Each my SQL queries should be run alone. Select the entire query and click execute or F5 is you are working on PgAdmin, if using DBeaver, place cursor at the end of the query,i.e after the semicolon(;) and click Ctrl+Enter.
@@ -54,7 +52,6 @@ To execute select the entire query and click execute.
 
 ## Section B — Window functions
 
-
 ### Question 6 — County leaderboards 
 **Scenario.** Each county manager wants their top 3 customers by lifetime revenue.
 To run select entire query and click execute.
@@ -80,3 +77,49 @@ To 1st query select query upto ';' and click execute. To run the second query co
 **Scenario.** Finance reports cumulative revenue that **restarts every January**.
 To run select entire query and click execute.
 | Question 10 — Year-to-date revenue | `section_b_window_functions.sql` | | screenshots/year_to_date_revenue.png
+
+## Section C — Advanced aggregation with subqueries
+
+### Question 11 — Customer tiers
+**Scenario.** The loyalty programme has four tiers by **lifetime revenue**:
+Platinum ≥ KES 1,000,000; Gold ≥ 500,000; Silver ≥ 100,000; Bronze below 100,000.
+To run select entire query and click execute or F5(in PgAdmin).
+| Question 11 — Customer tiers | `section_c_advanced_aggregation.sql` | | screenshots/customer_tiers.png
+
+### Question 12 — What did Mombasa buy in October?
+**Scenario.** The Mombasa team wants a one-line shopping list per customer for October 2026.
+To run select and execute each of the two queries separate.
+| Question 12 — What did Mombasa buy in October? | `section_c_advanced_aggregation.sql` | | screenshots/what_Mombasa_bought_in_October.png and
+screenshots/qualifying_customers.png
+
+### Question 13 — Payment health by method, 2026 
+**Scenario.** The payments team suspects one channel fails more often than the others.
+To run select entire query and click execute.
+| Question 13 — Payment health by method, 2026  | `section_c_advanced_aggregation.sql` | | screenshots/Payment_health_by_method_2026.png
+
+### Question 14 — Which departments carry the profit? 
+**Scenario.** The board asks which categories earned **more gross profit than the average category** in 2025.
+To run select entire query and click execute or F5(in PgAdmin).
+| Question 14 — Which departments carry the profit?  | `section_c_advanced_aggregation.sql` | | screenshots/which_departments_carry_the_profit.png
+
+### Question 15 — One sales table with subtotals
+**Scenario.** Regional heads want 2026 revenue for **Nairobi, Mombasa, Kisumu, Nakuru and Uasin Gishu**
+by category, with county subtotals, category subtotals and a grand total — in **one** query.
+To run select entire query and click execute or F5(in PgAdmin).
+| Question 15 — One sales table with subtotals | `section_c_advanced_aggregation.sql` | | screenshots/one_sales_table_with_subtotals.png
+
+## Section D — Views, functions, stored procedures and triggers
+
+All objects go in schema `sokomart`. Use `CREATE OR REPLACE` so your file can be re-run.
+After every `CALL`, **run a SELECT that proves what changed** and screenshot it.
+
+### Question 16 — Customer summary view and monthly category materialized view 
+**Scenario.** Analysts keep rewriting the same customer and category queries.
+To run select each query alone and click execute or F5(in PgAdmin).
+| Question 16 — Customer summary view and monthly category materialized view | `section_c_advanced_aggregation.sql` | | screenshots/top_10_customers_living_in_kiambu_by_lifetime_spent.png, screenshots/total_customers_&_count_of_customers_with_zero_completed.png, screenshots/december_2025_rows_ordered_by_revenue.png
+
+### Question 17 — Function: customer spend for a date range 
+**Scenario.** Customer care needs "how much has this customer spent between these dates?" on demand.
+To run select each query separately and run.
+| Question 17 — Function: customer spend for a date range | `section_c_advanced_aggregation.sql` | screenshots/calling_fn_for_customer_4000&_-1.png, screenshots/all_time_value_equals.png, screenshots/top_5_Nairobi_spenders_in_2025.png, screenshots/start_&_end_date_exception.png
+
