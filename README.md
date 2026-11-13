@@ -116,10 +116,20 @@ After every `CALL`, **run a SELECT that proves what changed** and screenshot it.
 ### Question 16 — Customer summary view and monthly category materialized view 
 **Scenario.** Analysts keep rewriting the same customer and category queries.
 To run select each query alone and click execute or F5(in PgAdmin).
-| Question 16 — Customer summary view and monthly category materialized view | `section_c_advanced_aggregation.sql` | | screenshots/top_10_customers_living_in_kiambu_by_lifetime_spent.png, screenshots/total_customers_&_count_of_customers_with_zero_completed.png, screenshots/december_2025_rows_ordered_by_revenue.png
+| Question 16 — Customer summary view and monthly category materialized view | `section_d_views_functions_procedures.sql` | | screenshots/top_10_customers_living_in_kiambu_by_lifetime_spent.png, screenshots/total_customers_&_count_of_customers_with_zero_completed.png, screenshots/december_2025_rows_ordered_by_revenue.png
 
 ### Question 17 — Function: customer spend for a date range 
 **Scenario.** Customer care needs "how much has this customer spent between these dates?" on demand.
 To run select each query separately and run.
-| Question 17 — Function: customer spend for a date range | `section_c_advanced_aggregation.sql` | screenshots/calling_fn_for_customer_4000&_-1.png, screenshots/all_time_value_equals.png, screenshots/top_5_Nairobi_spenders_in_2025.png, screenshots/start_&_end_date_exception.png
+| Question 17 — Function: customer spend for a date range | `section_d_views_functions_procedures.sql` | screenshots/calling_fn_for_customer_4000&_-1.png, screenshots/all_time_value_equals.png, screenshots/top_5_Nairobi_spenders_in_2025.png, screenshots/start_&_end_date_exception.png
+
+### Question 18 — Procedure: change a price and keep its history
+**Scenario.** The supplier of **Pwani Golden Cooking Oil 3L (product 71)** has raised prices.
+Every price change must be recorded.
+To run select each query section alone and click execute or F5 in Pgadmin.
+| Question 18 — Procedure: change a price and keep its history | `section_d_views_functions_procedures.sql` |screenshots/product_71_before_Update.png, screenshots/product_71_After_Update.png, screenshots/product_71_price_change_history.png, screenshots/product_71_price_change_audit_logs.png, screenshots/product_71_new_price_exception.png, screenshots/price_history_after_exception_was_thrown.png
+
+### Question 19 — Trigger + procedure: order status changes are always logged
+**Scenario.** Disputes keep coming up about who changed an order's status and when.
+| Question 19 — Trigger + procedure: order status changes are always logged | `section_d_views_functions_procedures.sql` | screenshots/48882_status_after_update.png, screenshots/48882_status_history.png, screenshots/48882_status_change_audit_log.png, screenshots/status_update_exception_caught.png
 
